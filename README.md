@@ -65,7 +65,7 @@ These three DataSeries will represent the first three columns of our new Summary
 
 This is a screenshot of this first step of our process:
 
-![this is an image](Challenge_Images/Pyber_challenge_D1#1-3.png)
+![this is an image](Challenge_Images/Pyber_challenge_D1_1-3.png)
 
 For the next part, we created two new DataSeries  that will hold the information contained in the last two columns of the new Summary DataFrame. Those columns will be:
 
@@ -74,7 +74,7 @@ For the next part, we created two new DataSeries  that will hold the information
 
 In order to get those numbers, we divided the total total values of fares by the total of rides and drivers, respectively, all of which were DataSeries we already  had from the previous step, with city type as the index. So, we used those DataSeries to create these two new DataSeries, as seen below:
 
-![this is an image](Challenge_Images/Pyber_challenge_D1#4-5.png)
+![this is an image](Challenge_Images/Pyber_challenge_D1_4-5.png)
 
 These were our subsequent steps:
 
@@ -86,11 +86,11 @@ When printed, the new DataFrame showed the heading 'type' over the three differe
 
 This screenshot shows our steps:
 
-![this is an image](Challenge_Images/Pyber_challenge_D1#6-7.png)
+![this is an image](Challenge_Images/Pyber_challenge_D1_6-7.png)
 
 Lastly, we formatted our DataFrame columns to reflect a visual format that corresponds to the information in each one:
 
-![this is an image](Challenge_Images/Pyber_challenge_D1#8.png)
+![this is an image](Challenge_Images/Pyber_challenge_D1_8.png)
 
 The final **Summary DataFrame** is ready for visualization!
 
@@ -120,29 +120,29 @@ We read the merged DataFrame, pyber_data_df, and we used the *.groupby()* functi
 
 This gave us **two indices** for grouping together the information, or data, about  fares - the **type** of city where the ride happened (Rural, Suburban or Urban), and the **date** when the ride happened, creating a new DataFrame, fare_types_by_date_df:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#1-2.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_1-2.png)
 
 Next, we **reset** the index to [0-2374] to provide for content for each cell to be placed according to its corresponding category under the column heading to which it pertained:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#3.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_3.png)
 
 By doing that, we also had a format that was appropriate for creating a **pivot table** using the *.pivot()* function and setting the 'date' as index, 'type' as columns, and 'fare' as values:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#4.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_4.png)
 
 Next, we applied the *.loc[]* function to create a new DataFrame using the pivot table, zooming the focus on a **specific time period** - January 01 through April 29th of 2019 - for our analysis. We also inspected the datatypes and content of that new DataFrame by applying the *.info()* function:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#5.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_5.png)
 
 Seeing that our index datatype showed as regular *Index* in the previous version, we set the 'date' index of our DataFrame to a *datetime* datatype. Now, upon inspecting the datatypes, we can see that Index is now set to *DatetimeIndex*:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#6-7.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_6-7.png)
 
 To finalize the construction of our DataFrame, we **resampled** it using the *.resample()* function. We did our resampling by week, and we specified that we wanted to see the sum of the fares for each week. 
 
 This is our final DataFrame, indexed with datetime indexes for each week, and showing three columns - Rural, Suburban and Urban - with the sum of the fares for each of the weeks in each of the areas, or 'types' of cities. The final **weekly_fares_df** DataFrame looked like this:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#8.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_8.png)
 
 
 
@@ -150,7 +150,7 @@ This is our final DataFrame, indexed with datetime indexes for each week, and sh
 
 Using the object-oriented interface method with Matplotlib on Jupyter Notebook, we plotted the weekly_fares_df DataFrame into a multi-line chart. Using the graph style 'fivethirtyeight', the chart looks appealing, the information is clear:
 
-![this is an image](Challenge_Images/Pyber_challenge_D2#9.png)
+![this is an image](Challenge_Images/Pyber_challenge_D2_9.png)
 
 We can now base our data analysis on the **Summary Line Chart**!
 
