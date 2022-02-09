@@ -91,6 +91,7 @@ This screenshot shows our steps:
 Lastly, we formatted our DataFrame columns to reflect a visual format that corresponds to the information in each one:
 
 ![this is an image](Challenge_Images/Pyber_challenge_D1#8.png)
+https://github.com/anaorenstein/PyBer_Analysis/blob/f5bc8e7f04225e8130083ecd678ef46330ae09e2/Challenge_Images/Pyber_challenge_D1%238.png
 
 The final **Summary DataFrame** is ready for visualization!
 
