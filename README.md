@@ -51,7 +51,7 @@ In order to provide a wider scope of analysis, we **merged** datasets using the 
 
 Now, our new DataFrame, **pyber_data_df**, is comprised of columns from  city_data_df and ride_data_df, where 'city', the common column, is the first one that appears. We determined that information about the specific rides would precede the information about the cities, so we established that ride_data_df would be placed on the left, as seen on this screenshot of our Jupyter Notebook file:
 
-![This is an image](Challenge_Images/Pyber_challenge_D1#1-3.png)
+ ![This is an image](Challenge_Images/Pyber_challenge_D1_merged_dfs.png)
 
 ##### Building the Summary DataFrame
 
@@ -91,7 +91,6 @@ This screenshot shows our steps:
 Lastly, we formatted our DataFrame columns to reflect a visual format that corresponds to the information in each one:
 
 ![this is an image](Challenge_Images/Pyber_challenge_D1#8.png)
-https://github.com/anaorenstein/PyBer_Analysis/blob/f5bc8e7f04225e8130083ecd678ef46330ae09e2/Challenge_Images/Pyber_challenge_D1%238.png
 
 The final **Summary DataFrame** is ready for visualization!
 
